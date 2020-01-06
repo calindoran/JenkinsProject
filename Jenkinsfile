@@ -3,15 +3,15 @@ pipeline
     agent any
     stages
     {
-        stage('Fetch')
+        stage('FetchStage')
         {
             steps
             {
-                git url:'https://gitlab.com/calindoran/JenkinsProject'
+                git 'https://gitlab.com/calindoran/JenkinsProject'
             }
         }
 
-        stage('Build')
+        stage('BuildStage')
         {
             steps
             {
@@ -19,7 +19,7 @@ pipeline
             }
         }
 
-        stage('Test')
+        stage('TestStage')
         {
             steps
             {

@@ -7,7 +7,7 @@ pipeline
         {
             steps
             {
-                git 'https://gitlab.com/calindoran/JenkinsProject'
+                git 'https://github.com/calindoran/JenkinsProject'
             }
         }
 
